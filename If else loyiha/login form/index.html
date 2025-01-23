@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Form</h1>
+        <form id="loginForm" onsubmit="return checkPassword()">
+            <div class="form-group">
+                <label for="username">Login:</label>
+                <input type="text" id="username" placeholder="Loginni kiriting" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Parol:</label>
+                <input type="password" id="password" placeholder="Parolni kiriting" required>
+            </div>
+            <div id="message"></div>
+            <button type="submit">Kirish</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
