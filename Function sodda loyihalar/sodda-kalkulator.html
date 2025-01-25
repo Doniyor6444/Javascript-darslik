@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sodda Kalkulyator</title>
+    <style>
+      body {
+        background: #2e2d2d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: #fff; text-align: center;">Sodda Kalkulyator</h1>
+    <script>
+      function qoshish(a, b) {
+        return a + b;
+      }
+
+      function ayirish(a, b) {
+        return a - b;
+      }
+
+      function kopaytiritsh(a, b) {
+        return a * b;
+      }
+
+      function bolish(a, b) {
+        if (b === 0) {
+          return "0 ga bo'lish mumkin emas!";
+        }
+        return a / b;
+      }
+
+      function kalkulyator() {
+        let son1 = parseFloat(prompt("Birinchi sonni kiriting: "));
+        let son2 = parseFloat(prompt("Birinchi sonni kiriting: "));
+        let amal = prompt("Qaysi amalni bajarishni hohlaysiz? (+, -, *, /): ");
+
+        let natija;
+        switch (amal) {
+          case "+":
+            natija = qoshish(son1, son2);
+            break;
+          case "-":
+            natija = ayirish(son1, son2);
+            break;
+          case "*":
+            natija = kopaytiritsh(son1, son2);
+            break;
+          case "/":
+            natija = bolish(son1, son2);
+            break;
+          default:
+            natija = "Noto'g'ri amal kiritildi!";
+            break;
+        }
+
+        alert("Natija: " + natija);
+      }
+
+      kalkulyator();
+    </script>
+  </body>
+</html>
