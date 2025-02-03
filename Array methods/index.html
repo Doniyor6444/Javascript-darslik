@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #todoList {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        background: #f4f4f4;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Vazifa kiriting" />
+    <button onclick="addTask()">Qo'shish</button>
+    <button onclick="tasks.pop(); renderTasks()">Oxirgisini o'chirish</button>
+    <button onclick="tasks.shift(); renderTasks()">
+      Birinchisini o'chirish
+    </button>
+
+    <ul id="todoList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
