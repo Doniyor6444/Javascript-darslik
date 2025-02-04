@@ -12,7 +12,7 @@ submitButton.addEventListener('click', function() {
 
     // Agar ism bo'sh bo'lsa, xabar berish
     if (userName === '') {
-        greetingDiv.textContent = 'Iltimos, ismingizni kiriting!';
+        greetingDiv.textContent = 'iltimos, ismingizni kiriting!';
         greetingDiv.style.color = 'red';
     } else {
         // Ismni ko'rsatish
@@ -20,6 +20,6 @@ submitButton.addEventListener('click', function() {
         greetingDiv.style.color = 'green';
     }
 
-    // Input maydonini bo'shatish
+    // Input maydonini bo'shatish 
     nameInput.value = '';
 });
