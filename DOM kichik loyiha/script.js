@@ -1,6 +1,6 @@
 
 
-// DOM elementlariga o'zgaruvchi sifatida murojaat qilish
+
 const nameInput = document.getElementById('nameInput');
 const submitButton = document.getElementById('submitButton');
 const greetingDiv = document.getElementById('greeting');
