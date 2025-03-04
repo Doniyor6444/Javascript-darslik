@@ -5,9 +5,9 @@ const nameInput = document.getElementById('nameInput');
 const submitButton = document.getElementById('submitButton');
 const greetingDiv = document.getElementById('greeting');
 
-// Foydalanuvchi ism kiritib, tugmani bosganda amal bajarish
+
 submitButton.addEventListener('click', function() {
-    // Foydalanuvchidan ismni olish
+    
     const userName = nameInput.value.trim();  // trim() methodi bosh joylarni olib tashlaydi
 
     // Agar ism bo'sh bo'lsa, xabar berish
